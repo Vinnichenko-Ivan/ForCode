@@ -13,8 +13,7 @@ def getCount(login):
     #return dtoJson["result"]
     for i in dtoJson["result"]:
       name = str(i["problem"]["contestId"]) + i["problem"]["index"]
-      if(i["verdict"] == "OK"):
-        myset.add(name)
+      myset.add(name)
       
     return len(myset)
   except:
